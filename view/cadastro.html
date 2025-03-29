@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset='utf-8'>
+  <title>Mique | Cadastro</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../css/cadastro.css'>
+  <script src='../script/cadastro.js'></script>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="box">
+
+    <h1 id="title">Cadastre-se</h1>
+
+    <form>
+      <p><input type="text" name="name" id="name" placeholder="* Digite seu nome" required maxlength="50"> <i
+          class="fa-regular fa-user"></i></p>
+
+      <p><input type="email" name="email" id="email" placeholder="* Digite seu e-mail" required maxlength="50"> <i
+          class="fa-regular fa-envelope"></i></p>
+
+      <p><input type="password" name="password" id="pw" placeholder="* Digite sua senha" required maxlength="8"> <i
+          class="fa-solid fa-lock"></i></p>
+
+      <p><input type="text" name="cpf_cnpj" id="cpf_cnpj" autocomplete="off" placeholder="* Digite seu CPF" required
+          maxlength="14"> <i class="fa-solid fa-file"></i></p>
+
+      <p><input type="date" name="birthday" id="birthday" required> <i class="fa-solid fa-cake-candles"></i></p>
+
+      <p><label for="terms">Concordo com os <a href="#" id="consentimento">termos de consentimento</a>:</label></p>
+      <input type="checkbox" name="terms" id="terms" required>
+
+      <p><input type="button" value="Cadastrar" onclick="cadastroUsuario()" id="btn-cadastro"></p>
+    </form>
+
+    <a id="btn-voltar" href="../index.html">Voltar</a>
+
+  </div>
+</body>
+
+</html>

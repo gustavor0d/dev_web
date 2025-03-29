@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Mique | Cadastrar Veículo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/veiculo.css'>
+    <script src='../script/veiculo.js'></script>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="box">
+
+        <h1 id="title">Cadastrar Veículo</h1>
+        <i class="fa-solid fa-car"></i>
+
+        <form>
+            <p><input type="text" name="brand" id="marca" placeholder="Digite a Marca" required maxlength="30"></p>
+
+            <p><input type="text" name="model" id="modelo" placeholder="Digite o Modelo" required maxlength="30"></p>
+
+            <p><input type="text" name="type" id="tipo" placeholder="Digite o Tipo" required maxlength="30"></p>
+
+            <p><input type="text" name="color" id="cor" placeholder="Digite a Cor" required maxlength="30"></p>
+
+            <p><input type="text" name="year" id="ano" placeholder="Digite o Ano" required maxlength="4"></p>
+
+            <p><input type="button" value="Cadastrar Endereço" onclick="cadastrarVeiculo()" id="btn-cadastrar"></p>
+        </form>
+
+        <a id="btn-voltar" href="home.html">Voltar</a>
+    </div>
+</body>
+
+</html>

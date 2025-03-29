@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Mique | Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/home.css'>
+    <script src='../script/home.js'></script>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+
+            <ul class="btn-p">
+                <a class="btn" href="endereco.html">Cadastrar Endereço</a>
+                <a class="btn" href="veiculo.html">Cadastrar Veículo</a>
+                <a class="btn" onclick="deslogarUsuario()">Deslogar</a>
+            </ul>
+
+            <a href="home.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+
+        </header>
+
+        <main>
+            <div class="apresentacao-site">
+
+                <div class="text">
+                    <h1>Bem vindo<span id="nome"></span><span>!</span></h1>
+                </div>
+
+                <h3>ENDEREÇOS CADASTRADOS:</h3>
+
+                <p><input type="button" value="Atualizar lista" onclick="visualizarEnderecos()" id="btn-att"></p>
+
+                <table id="enderecos">
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>CEP</th>
+                            <th>Endereço</th>
+                            <th>Complemento</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+
+                </table>
+
+                <br>
+
+                <h3>VEÍCULOS CADASTRADOS:</h3>
+
+                <p><input type="button" value="Atualizar lista" onclick="visualizarVeiculos()" id="btn-att"></p>
+
+                <table id="veiculos">
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Tipo</th>
+                            <th>Cor</th>
+                            <th>Ano</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <ul>
+                    <p>
+                        <li><a class="btn" href="https://www.facebook.com/"><i
+                                    class="fa-brands fa-facebook"></i>/miqueofficial</a></li>
+                    </p>
+                    <p>
+                        <li><a class="btn" href="https://www.instagram.com/"><i
+                                    class="fa-brands fa-instagram"></i>/mique</a></li>
+                    </p>
+                    <p>
+                        <li><a class="btn" href="https://www.youtube.com/"><i
+                                    class="fa-brands fa-youtube"></i>/miqueofc</a></li>
+                    </p>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

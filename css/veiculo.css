@@ -1,0 +1,87 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url(../img/login-cadastro.png);
+  background-size: cover;
+}
+
+.box {
+  background-color: rgba(52, 52, 52, 0.7);
+  border: 1px solid white;
+  position: absolute;
+  padding: 35px 35px;
+  border-radius: 20px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(192, 192, 192);
+}
+
+#title {
+  color: white;
+  position: relative;
+  top: -18px;
+  cursor: context-menu;
+}
+
+i {
+  position: relative;
+  top: -18px;
+  font-size: 40px;
+}
+
+input {
+  width: 410px;
+  padding: 12px 15px;
+  border-width: 1px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+}
+
+#btn-cadastrar {
+  width: 230px;
+  background-color: rgb(153, 153, 153);
+  color: rgb(56, 56, 56);
+  padding: 11px 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  border-style: solid;
+  border-color: transparent;
+  transition: transform 0.5s ease, color 0.3s ease;
+}
+
+#btn-cadastrar:hover {
+  color: white;
+  background-color: rgb(179, 179, 179);
+  cursor: pointer;
+  border-color: white;
+  transform: scale(1.02);
+}
+
+#btn-cadastrar:active {
+  background-color: rgb(153, 153, 153);
+  transition: background-color 0.1s ease;
+  color: rgba(255, 255, 255, 0.65);
+  border-color: white;
+  transform: scale(1);
+}
+
+#btn-voltar {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#btn-voltar:hover {
+  text-decoration: underline;
+}
+
+#btn-voltar:active {
+  color: rgba(192, 192, 192, 0.5);
+}
+
+.wait-cursor {
+  cursor: wait;
+}

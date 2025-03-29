@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mique | Atualizar Endereço</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/attendereco.css" />
+    <script src="../script/attendereco.js"></script>
+    <script src="../script/endereco.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="box">
+        <h1 id="title">Atualizar Endereço</h1>
+        <i class="fa-solid fa-pen-to-square"></i>
+
+        <form>
+            <p>
+                <input type="text" name="titulo" id="titulo"
+                    placeholder="* Digite um título para cadastro. Exemplo: 'Casa'" required maxlength="50" />
+            </p>
+
+            <p>
+                <input type="number" name="cep" id="cep" placeholder="* Digite seu CEP" required autocomplete="off" />
+            </p>
+
+            <p>
+                <input type="button" value="Validar" onclick="verificar()" id="btn-verificar" />
+            </p>
+
+            <p>
+                <input type="text" name="resposta-endereco" id="resposta-endereco" placeholder="Endereço" disabled />
+            </p>
+
+            <p>
+                <input type="text" name="numero" id="numero" placeholder="* Número" required maxlength="10" />
+            </p>
+
+            <p>
+                <input type="text" name="complemento" id="complemento" placeholder="Complemento" maxlength="50" />
+            </p>
+
+            <p>
+                <input type="button" value="Atualizar Endereço" onclick="attEndereco()" id="btn-atualizar" />
+            </p>
+        </form>
+
+        <a id="btn-cancelar" href="home.html">Cancelar</a>
+    </div>
+</body>
+
+</html>
